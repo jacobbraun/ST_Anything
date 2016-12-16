@@ -36,7 +36,7 @@
 
 namespace st
 {
-	class EX_RCSwitch: public Executor
+	class EX_RCSwitch : public Executor
 	{
 		private:
 			bool m_bCurrentState;	//HIGH or LOW
@@ -46,6 +46,7 @@ namespace st
 			unsigned int m_onLength;	//RCSwitch On Length
 			unsigned long m_offCode;	//RCSwitch Off Code
 			unsigned int m_offLength;	//RCSwitch Off Length
+			unsigned int m_pulseLength; //RCSwitch Pulse Length Code
 		
 			void writeStateToPin();	//function to update the Arduino digital output pin via RCSwitch switchOn and switchOff commands
 		
