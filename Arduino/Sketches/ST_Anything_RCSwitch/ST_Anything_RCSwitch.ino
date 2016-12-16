@@ -66,7 +66,6 @@
 
 #define PIN_RCSWITCH             12
 
-
 //******************************************************************************************
 //Arduino Setup() routine
 //******************************************************************************************
@@ -86,9 +85,9 @@ void setup()
   //Interrupt Sensors 
   
   //Executors
-  static st::EX_RCSwitch executor1(F("rcswitch1"), PIN_RCSWITCH, 35754004, 26, 18976788, 26);
-  static st::EX_RCSwitch executor2(F("rcswitch2"), PIN_RCSWITCH, 35751956, 26, 18974740, 26);
-  static st::EX_RCSwitch executor3(F("rcswitch3"), PIN_RCSWITCH, 35756052, 26, 18978836, 26);
+  static st::EX_RCSwitch executor1(F("rcswitch1"), PIN_RCSWITCH, 35754004, 26, 18976788, 26, 3);
+  static st::EX_RCSwitch executor2(F("rcswitch2"), PIN_RCSWITCH, 35751956, 26, 18974740, 26, 3);
+  static st::EX_RCSwitch executor3(F("rcswitch3"), PIN_RCSWITCH, 35756052, 26, 18978836, 26, 3);
 
   //*****************************************************************************
   //  Configure debug print output from each main class 
